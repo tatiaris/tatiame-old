@@ -1,0 +1,167 @@
+:root {
+    --primary-color-light: #e393f7;
+    --primary-color-dark: #282828;
+    --primary-color-contrast: #e25c5c;
+    --primary-color-text: #f3f3f3;
+    --primary-color-bg: #6420bd;
+}
+
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body {
+    /* code for an image background */
+
+    /* background-image: url('./../../images/wp1.png'); */
+    /* background-size: cover; /* or contain depending on what you want */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
+
+    /* code for a simple color background */
+
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color-bg);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+span {
+    color: var(--primary-color-dark);
+}
+.flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music-player-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--primary-color-light);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px var(--primary-color-contrast);
+}
+.song-cover-container{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -80px;
+    top: -80px;
+    background-color: var(--primary-color-contrast);
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px var(--primary-color-dark);
+    background-image: url('./img/song.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.song-info-container {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    color: var(--primary-color-dark);
+}
+.music-play-buttons-container {
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--primary-color-dark);
+}
+.music-button {
+    margin: 2%;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: 1px 1px 5px var(--primary-color-contrast);
+    transition: 250ms;
+}
+.music-button:hover {
+    font-size: 1.2em;
+}
+.full-width {
+    /* width: 400px; */
+    width: 100%;
+}
+.song-title {
+    content: attr(sname);
+    padding: 8%;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--primary-color-contrast);
+}
+.song-artist {
+    padding: 6%;
+    text-shadow: 0.5px 0.5px 1px var(--primary-color-contrast);
+}
+.song-album {
+    padding: 4%;
+    /* text-shadow: 1px 1px 2px var(--primary-color-contrast); */
+}
+.song-title-container {
+    height: 30%;
+    /* background-color: pink; */
+    border-radius: 15px;
+    font-size: 2em;
+}
+.song-artist-container {
+    height: 20%;
+    /* background-color: powderblue; */
+    font-size: 1.5em;
+}
+.song-album-container {
+    height: 15%;
+    border-radius: 15px;
+    font-size: 1em;
+    font-style: italic;
+}
+.empty-space {
+    width: 100%;
+    height: 20%;
+}
+.song-progress-container {
+    height: 20%;
+    border-radius: 15px;
+    font-size: 2em;
+}
+.song-length-container {
+    width: 100%;
+    height: 50%;
+}
+.song-length {
+    width: 80%;
+    height: 100%;
+    font-size: 0.5em;
+    display: flex;
+    align-items: flex-end;
+}
+.progress-bar-container {
+    width: 100%;
+    height: 50%;
+    color: powderblue;
+}
+.progress_bar {
+    height: 6px;
+    width: 80%;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--primary-color-dark);
+}
+.progress_current {
+    height: inherit;
+    width: 69%;
+    background-color: var(--primary-color-contrast);
+    border-radius: 10px;
+}

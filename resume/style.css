@@ -1,0 +1,196 @@
+:root {
+    --primary-color-lighter:#c4d3f2;
+    --primary-color-light: #a1c1f7;
+    --primary-color-light-hover: #00897bb8;
+    --primary-color-dark: #282828;
+    --primary-color-dark-hover: #282828a1;
+    --primary-color-contrast: white;
+}
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.my-body {
+    justify-content:center;
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background:black;
+    margin: 0;
+}
+.resume-page {
+    position:relative;
+    width:814px;
+    height:1056px;
+    background-color:white;
+    justify-content:center;
+    display:flex;
+}
+.personal-info {
+    position:relative;
+    width:28%;
+    height:100%;
+    background:var(--primary-color-lighter);
+}
+.professional-info {
+    position:relative;
+    width:72%;
+    height:100%;
+    background:var(--primary-color-contrast);
+}
+.name {
+    display:block;
+    position:relative;
+    color:var(--primary-color-dark);
+    padding:5%;
+    font-size:1.6em;
+    font-weight:bold;
+}
+.personal-title {
+    display:block;
+    color:var(--primary-color-dark);
+    padding-left:5%;
+    font-size:1em;
+}
+.sub-info-container {
+    margin-top: 4%;
+}
+.sub-info-title {
+    display: block;
+    background:var(--primary-color-light);
+    padding:5%;
+    padding-top:2%;
+    padding-bottom:2%;
+    font-size:1em;
+    color:var(--primary-color-dark);
+    font-weight:bold;
+}
+.sub-info-type {
+    display: block;
+    padding:4%;
+    font-size:0.8em;
+    font-weight:bold;
+}
+.sub-info-data {
+    display:block;
+    margin-left:10%;
+    font-size:0.8em;
+    margin-right: 5%;
+}
+a {
+    color: var(--primary-color-dark);
+}
+a:hover {
+    color: black;
+}
+.progress {
+    margin-left: 10%;
+    margin-right: 5%;
+    background-color: var(--primary-color-contrast);
+    border:none;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-bar {
+    background-color: #5f5498;
+    font-size: 0px;
+    line-height: 1.7vh;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.professional-overview {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--primary-color-dark);
+    font-size: 0.86em;
+}
+.pro-info-type {
+    margin-left:5%;
+    margin-right:5%;
+    text-align: left;
+    font-size: 1.1em;
+    color: var(--primary-color-dark);
+    border-bottom: 2px solid var(--primary-color-dark);
+}
+.dated-info-container {
+    margin: 1.9%;
+    padding: 1%;
+    display: flex;
+    background: #f5f3f3;
+}
+.date-container {
+    width: 30%;
+    height: auto;
+    font-size: 0.8em;
+}
+.data-container {
+    width: 70%;
+    height: auto;
+}
+.exp-name {
+    color: var(--primary-color-dark)!important;
+    font-weight: bold;
+    font-size: 0.87em;
+}
+.exp-data {
+    display: block;
+    font-weight: normal;
+    margin-top: 1.2%;
+    font-size: 0.8em;
+    color: var(--primary-color-dark);
+}
+.interest-container {
+    width: 100%;
+    text-align: center;
+}
+.interest-data {
+    display: block;
+    font-size: 0.9em;
+    color: var(--primary-color-dark);
+}
+.link-icon::after {
+    content: "  \f0c1";
+}
+.map-icon::after {
+    content: "  \f3c5";
+}
+.phone-icon::after {
+    content: "  \f095";
+}
+.mail-icon::after {
+    content: "  \f01c";
+}
+.browser-icon::after {
+    content: "  \f0ac";
+}
+.skill {
+    display: block;
+    padding: 2%;
+    padding-left:4%;
+    font-size:0.82em;
+    font-weight:bold;
+}
+.skill::before {
+    content: "\2022  ";
+}
+.skill-container {
+    margin-top:2%;
+}
+.exp-position {
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: lighter;
+    right: 2.5vh;
+    position: absolute;
+}

@@ -1,0 +1,40 @@
+:root {
+    --color-light: white;
+    --color-dark: black;
+}
+
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hide;
+    color: white;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-dark);
+    margin: 0px;
+}
+.player {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    transition: 200ms;
+}
+.gun {
+    margin: 0px;
+    width: 20px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    left: 100%;
+    transition: 100ms;
+    transform: rotate(90deg);
+}

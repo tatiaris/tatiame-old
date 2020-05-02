@@ -1,0 +1,325 @@
+:root {
+    --primary-color-light: #1ba5d3;
+    --color-light: white;
+    --color-dark: black;
+    --color-right: lime;
+    --color-wrong: red;
+}
+
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hide;
+    margin: 0;
+    padding: 0;
+    transition: 500ms;
+    color: white;
+}
+
+/* PHONE */
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        background-color: black;
+    }
+    button {
+        margin: 15px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-size: 1em;
+        background-color: transparent;
+        border-color: white;
+    }
+    button:focus {
+        outline: 0px;
+    }
+    button:active {
+        transition: 10ms;
+        width: 180px;
+        height: 40px;
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    button:hover {
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    footer {
+        height: 20%;
+        font-size: 0.75em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .container {
+        height: 25%;
+        width: 100%;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .grid_container {
+        width: 50vh;
+        height: 50vh;
+        /* background-color: grey; */
+    }
+    .btn-disabled {
+        background-color: grey;
+        color: black;
+        border-color: black;
+    }
+    .btn-disabled:hover {
+        background-color: grey;
+    }
+    .row {
+        width: 100%;
+        height: 11.11111%;
+        /* background-color: darkgrey; */
+    }
+    .cell {
+        width: 11.1111111%;
+        height: 100%;
+        border: 1px dashed #fdfdfd4d;
+        /* border-radius: 30%; */
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        text-align: center;
+        border: 0px;
+        font-size: 2em;
+    }
+    input:focus {
+        outline: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .hint {
+        position: fixed;
+        font-size: 0.25em;
+        margin-left: 2px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        background-color: black;
+    }
+    button {
+        margin: 15px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-size: 1em;
+        background-color: transparent;
+        border-color: white;
+    }
+    button:focus {
+        outline: 0px;
+    }
+    button:active {
+        transition: 10ms;
+        width: 180px;
+        height: 40px;
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    button:hover {
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    footer {
+        height: 20%;
+        font-size: 0.75em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .container {
+        height: 25%;
+        width: 100%;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .grid_container {
+        width: 50vh;
+        height: 50vh;
+        /* background-color: grey; */
+    }
+    .btn-disabled {
+        background-color: grey;
+        color: black;
+        border-color: black;
+    }
+    .btn-disabled:hover {
+        background-color: grey;
+    }
+    .row {
+        width: 100%;
+        height: 11.11111%;
+        /* background-color: darkgrey; */
+    }
+    .cell {
+        width: 11.1111111%;
+        height: 100%;
+        border: 1px dashed #fdfdfd4d;
+        /* border-radius: 30%; */
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        text-align: center;
+        border: 0px;
+        font-size: 2em;
+    }
+    input:focus {
+        outline: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .hint {
+        position: fixed;
+        font-size: 0.25em;
+        margin-left: 2px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        background-color: black;
+    }
+    button {
+        margin: 15px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-size: 1em;
+        background-color: transparent;
+        border-color: white;
+    }
+    button:focus {
+        outline: 0px;
+    }
+    button:active {
+        transition: 10ms;
+        width: 180px;
+        height: 40px;
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    button:hover {
+        background-color: white;
+        border-color: black;
+        color: black;
+    }
+    footer {
+        height: 20%;
+        font-size: 0.75em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .container {
+        height: 25%;
+        width: 100%;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .grid_container {
+        width: 50vh;
+        height: 50vh;
+        /* background-color: grey; */
+    }
+    .btn-disabled {
+        background-color: grey;
+        color: black;
+        border-color: black;
+    }
+    .btn-disabled:hover {
+        background-color: grey;
+    }
+    .row {
+        width: 100%;
+        height: 11.11111%;
+        /* background-color: darkgrey; */
+    }
+    .cell {
+        width: 11.1111111%;
+        height: 100%;
+        border: 1px dashed #fdfdfd4d;
+        /* border-radius: 30%; */
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        text-align: center;
+        border: 0px;
+        font-size: 2em;
+    }
+    input:focus {
+        outline: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .hint {
+        position: fixed;
+        font-size: 0.25em;
+        margin-left: 2px;
+    }
+}
